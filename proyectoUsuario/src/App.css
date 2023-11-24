@@ -1,0 +1,19 @@
+#root{
+    width: 100vw;
+   }
+   body{ margin: 0;
+    padding:0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+:root {
+    --color-verde: #4CAF50;
+    --color-naranja-habilitado: #FFA500;
+    --color-naranja-deshabilitado: #FFD699;}
