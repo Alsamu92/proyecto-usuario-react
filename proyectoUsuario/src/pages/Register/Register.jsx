@@ -25,22 +25,22 @@ export const Register = () => {
 
     if (inputFile.length != 0) {
       // si es diferente a cero quiere decir que tenemos una imagen
-      const custonFormData = {
+      const customFormData = {
         ...formData,
         image: inputFile[0],
       };
 
       setSend(true);
-      setRes(await registerUser(custonFormData));
+      setRes(await registerUser(customFormData));
       setSend(false);
     } else {
       // en este caso no hay imagen y nos quedamos con lo que tenemos en el form data
-      const custonFormData = {
+      const customFormData = {
         ...formData,
       };
 
       setSend(true);
-      setRes(await registerUser(custonFormData));
+      setRes(await registerUser(customFormData));
       setSend(false);
     }
   };

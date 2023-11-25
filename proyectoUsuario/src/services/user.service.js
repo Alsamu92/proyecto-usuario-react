@@ -94,7 +94,20 @@ export const updateUser = async (formData) => {
 export const todosLosUser = async (formData) => {
   return APIUser.get("/", formData, {
     headers: {
-      "Content-Type": "multipart/form-data",
+     
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => error);
+};
+ 
+//! ------------------------------seguir user -----------------------
+
+export const seguirUser = async (userseguido) => {
+  return APIUser.patch(`/seguiruser/${userseguido}/`, {
+    headers: {
+      
       Authorization: `Bearer ${updateToken()}`,
     },
   })

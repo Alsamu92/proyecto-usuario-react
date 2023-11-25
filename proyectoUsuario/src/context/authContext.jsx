@@ -11,6 +11,7 @@ export const AuthContextProvider = ({ children }) => {
   });
 
   const [deleteUser, setDeleteUser] = useState(false);
+  const [favUser, setFavUser] = useState(false);
 
   const [allUser, setAllUser] = useState({
     data: {
@@ -64,6 +65,8 @@ export const AuthContextProvider = ({ children }) => {
       bridgeData,
       deleteUser,
       setDeleteUser,
+      favUser,
+      setFavUser
     }),
     [user, allUser, deleteUser]
   );
