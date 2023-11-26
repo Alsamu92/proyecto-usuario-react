@@ -1,25 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import "./UserCard.css";
-import { useParams } from 'react-router-dom';
-import { useFavUser } from '../../hooks/useFavUser';
 import { seguirUser } from '../../services/user.service';
 import { useAuth } from '../../context/authContext';
 
-export const UserCard = ({ name, gender, comentarios, followed, following, provincia, image, id }) => {
+export const UserCard = ({ name, gender, comentarios, followed, following, provincia, image, id ,handleSeguirClick,additionalClass}) => {
 
 
-  const [clicked, setClicked] = useState(false);
+  
 
-  const handleSeguirClick = async (userId) => {
-    
-    await seguirUser(userId);
-    
-    setClicked(prevState => !prevState);
-  };
 
-  useEffect(() => {
-    console.log("Componente actualizado");
-  }, [clicked]);
   return (
     <>
       <article key={id} className="user-card">
@@ -39,7 +28,7 @@ export const UserCard = ({ name, gender, comentarios, followed, following, provi
         <div className="user-location">
           <p><strong>Provincia:</strong> {provincia}</p>
           {/* Utiliza una función anónima para llamar a handleSeguirClick */}
-          <span onClick={() => handleSeguirClick(id)} className="material-symbols-outlined">
+          <span onClick={() => handleSeguirClick(id)} className={`material-symbols-outlined ${additionalClass}`}>
             favorite
           </span>
         </div>

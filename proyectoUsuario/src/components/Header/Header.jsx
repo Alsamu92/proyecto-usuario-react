@@ -12,14 +12,15 @@ export const Header = () => {
   return (
     <>
     { (!mostrarBarra && user == null)&&
-    <div>
-    <div className="mensaje-registro"> 
-      <h3>Regístrate y Únete </h3>
+    <div className="mensaje-registro">
+    <div className="mensajeyboton"> 
+    <div></div>
+      <NavLink to="/register" onClick={handleMostrarBarra}>Regístrate y Únete  </NavLink>
       <button className='cierre'  onClick={handleMostrarBarra}>
               <span className="material-symbols-outlined">cancel</span>
             </button>
       </div>
-    <p>Únete a VecinoMarket y disfruta de compras convenientes y ofertas exclusivas.</p>
+    <p>Únete a VecinoMarket y disfruta de ofertas exclusivas.</p>
     </div>}
    
       <header className="main-header">
@@ -60,8 +61,7 @@ export const Header = () => {
           </div>
         </div>
         <div className="nav-links">
-          <a href="/">Ideas y consejos</a>
-          <a href="/">Ofertas y destacados</a>
+          <NavLink to="/supermercados">Supermercados</NavLink>
           <a href="/">Black Friday 2023</a>
           <a href="/">Folletos</a>
           {user !== null && (

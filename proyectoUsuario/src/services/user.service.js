@@ -114,4 +114,16 @@ export const seguirUser = async (userseguido) => {
     .then((res) => res)
     .catch((error) => error);
 };
+//! ------------------------------seguir user -----------------------
+
+export const buscarMiUser = async (name) => {
+  return APIUser.get(`/byname/${name}`, {
+    headers: {
+      
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => error);
+};
  

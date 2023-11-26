@@ -19,12 +19,13 @@ export const AuthContextProvider = ({ children }) => {
       user: {
         password: "",
         email: "",
+        provincia: "",
       },
     },
   });
 
   //! -----------------------------------------------------------------------
-  //? -------- PUENTE PARA CUANDO TENGAMOS PROBLEMAS DE ASYNCRONIA ----------
+  //? -------- PUENTE PARA CUANDO TENGAMOS PROBLEMAS DE ASÍNCRONIA ----------
   //! -----------------------------------------------------------------------
 
   const bridgeData = (state) => {

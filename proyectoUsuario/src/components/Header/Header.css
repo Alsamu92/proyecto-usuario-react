@@ -52,7 +52,7 @@ strong{
   justify-content: flex-end;
   align-items: flex-end;
   gap: 10px;
-  padding: 10px;
+
   
 }
 #iniciarayuda a  img{
@@ -121,4 +121,36 @@ header a:hover::after {
 
 .profileCircle {
   max-width: 50px;
+}
+.mensaje-registro,.mensaje-registro p {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  background-color: #006400;
+  color: white;
+ 
+}
+.mensajeyboton{
+  display: flex;
+ justify-content: space-around;
+ gap: 20vw;
+ background-color: #006400;
+
+ 
+
+}
+.mensajeyboton a{
+color: white;
+font-size: 1.2rem;
+}
+.mensajeyboton button{
+border: none;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 1px;
+}
+.mensajeyboton span{
+position: relative;
+top: 5%;
 }

@@ -1,0 +1,131 @@
+.mapa-espana{
+    background-image: url("https://res.cloudinary.com/djfkchzyq/image/upload/v1700934576/gu3a5hdgd0pniq4s67au.png");
+    background-size: cover;
+  background-position: 10% center;
+  background-size: 115%;
+  background-repeat: no-repeat;
+ 
+    height: 90VH;
+   
+    max-height: 350px;
+    width: 350px;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5)
+  }
+  .flecha{
+    position: relative;
+    right: 40%;
+    bottom:35%
+  }
+  .spanflecha{
+    font-size: 5em;
+    font-weight: bold;
+    color: black;
+    position: relative;
+  
+  }
+  .circulo-distrito {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(219, 63, 52, 0.158); /* Color del círculo */
+    border-radius: 50%; /* Hace que el div sea un círculo */
+    position: relative;
+    
+    transform: translate(-50%, -50%); /* Centra el círculo */
+    animation: destellos 1s infinite alternate; /* Animación de destellos */
+  }
+
+  .circulo-ciudad:hover {
+   cursor:zoom-in;
+  }
+  
+  @keyframes destellos {
+    to {
+      box-shadow: 0 0 10px 5px rgba(253, 253, 253, 0.925); 
+      background-color: white;/* Efecto de destellos */
+    }
+  }
+  .super-page{display: flex;
+  justify-content: center;
+flex-direction: column;
+align-items: center;}
+  .section-super{
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+background-color: rgb(61, 61, 248);
+width: 100vw;
+padding: 20px;}
+/* Estilos para la parte izquierda */
+.parte-izquierda {
+  flex: 1; /* Hace que ocupe todo el espacio disponible */
+  padding: 20px; /* Añade un relleno para separar el contenido de los bordes */
+  background-color: #f0f0f0; /* Fondo de color claro para destacar el área */
+  border-radius: 8px; /* Bordes redondeados para una apariencia más suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+}
+
+/* Estilos para el formulario */
+.form-select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; /* Espaciado superior para separar del encabezado */
+}
+
+/* Estilos para el botón */
+button {
+  margin-top: 10px; /* Espaciado superior para separar del formulario */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:disabled {
+  background-color: #49c1a388; /* Color más claro cuando el botón está deshabilitado */
+}
+
+button:hover {
+  background-color: #2f7a67; /* Color más oscuro al pasar el ratón sobre el botón */
+}
+.form-select select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(182, 177, 177);
+  font-weight: bold;
+}
+
+.form-select label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.madrid{
+  top:-5%;
+  left:15%;
+}
+.valencia{top: 8%;
+left: 32%;}
+.barcelona{top: -18%;
+  left: 42%}
+.cadiz{top: 36%;
+  left: -28%}
+.pontevedra{top: -25%;
+  left: -55%}

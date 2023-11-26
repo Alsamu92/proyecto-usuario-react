@@ -39,7 +39,7 @@
     border-radius: 8px;
     margin-right: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: white;
+   
   }
   
   .user-info {
@@ -96,7 +96,7 @@
       width: 80px;
       height: 80px;
       margin-right: 15px;
-      background-color: white;
+      
     }
   
     .user-name {
@@ -140,4 +140,16 @@
       font-size: 0.8rem;
     }
   }
-  
+  .like{
+    color: red;
+    font-variation-settings:
+    'FILL' 100,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    transition: color 0.3s ease-in-out;
+    animation: pulse 0.8s infinite alternate;
+  }
+  span{
+    cursor: pointer;
+  }

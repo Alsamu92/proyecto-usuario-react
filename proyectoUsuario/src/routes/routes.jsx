@@ -1,7 +1,7 @@
 import { createBrowserRouter} from "react-router-dom";
 import { App } from "../App";
 
-import { ChangePassword, CheckCode, Dashboard, FormProfile, Login, Profile,ForgotPassword, Home  } from "../pages";
+import { ChangePassword, CheckCode, Dashboard, FormProfile, Login, Profile,ForgotPassword, Home, Supermercados  } from "../pages";
 import { Register } from "../pages/Register/Register";
 import { Protected } from "../components/ProtectedRoute/Protected";
 import ProtectedCheckChildren from "../components/ProtectedRoute/ProtectedCheckChildren";
@@ -35,7 +35,15 @@ export const router = createBrowserRouter([
           </Protected>
         ),
       },
-     
+      {
+        path: "/supermercados",
+        element: (
+          
+            <Supermercados/>
+         
+        ),
+      },
+   
       {
         path: "/profile",
         element: (

@@ -1,0 +1,57 @@
+/* CardSuper.css */
+
+.card-super {
+  display: flex;
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid green;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #acfca2, rgb(124, 246, 100));
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+
+.card-super:hover {
+  transform: scale(1.02);
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius:20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-super:hover .image {
+  transform: scale(1.1);
+}
+
+.text-container {
+  flex: 1;
+  padding: 0 20px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.info {
+  margin: 8px 0;
+  font-size: 16px;
+  color: black;
+}
+
+

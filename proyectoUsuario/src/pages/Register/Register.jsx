@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { Link, Navigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
 import { registerUser } from "../../services/user.service";
-import { Uploadfile } from "../../components";
+import { FormProvincias, Uploadfile } from "../../components";
 import { useEffect, useState } from "react";
 import { useErrorRegister } from "../../hooks/useErrorRegister";
 
@@ -115,6 +115,7 @@ export const Register = () => {
                 value="hombre"
                 {...register("gender")}
               />
+              
               <label htmlFor="hombre" className="label-radio hombre">
                 Hombre
               </label>
@@ -129,6 +130,8 @@ export const Register = () => {
                 Mujer
               </label>
             </div>
+            <FormProvincias registerForm={register("provincia", { required: 'Seleccione una provincia' })} />
+
             <Uploadfile />
           </div>
 
