@@ -9,7 +9,7 @@ export const NavProfile = () => {
   return (
     <div className="containerNavProfile">
       <Link to="/profile/changePassword">
-      <span class="material-symbols-outlined">
+      <span className="material-symbols-outlined">
 lock_reset
 </span>
       </Link>
@@ -20,7 +20,7 @@ lock_reset
         </span>
       </Link>
 
-      <span   onClick={() => useDeleteUser(setUser, setDeleteUser)}class="material-symbols-outlined">
+      <span   onClick={() => useDeleteUser(setUser, setDeleteUser)}className="material-symbols-outlined">
 delete
 </span>
       

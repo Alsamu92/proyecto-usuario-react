@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { mayusPrimeraLetra } from '../../util/ponerMayuscula';
 
 const provinciasIbericas = {
   espana: [
@@ -15,7 +16,7 @@ const provinciasIbericas = {
 };
 
 export const FormProvincias = ({ registerForm }) => {
-  const [paisSeleccionado, setPaisSeleccionado] = useState('espana');
+ 
   const [provincias, setProvincias] = useState(provinciasIbericas['espana']);
 
 
@@ -25,7 +26,7 @@ export const FormProvincias = ({ registerForm }) => {
       <select id="provincia" name="provincia" {...registerForm}>
         {provincias.map((provincia) => (
           <option key={provincia} value={provincia}>
-            {provincia}
+            {mayusPrimeraLetra(provincia)}
           </option>
         ))}
       </select>

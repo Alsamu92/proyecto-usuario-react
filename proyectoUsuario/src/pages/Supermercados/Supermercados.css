@@ -59,28 +59,43 @@ align-items: center;}
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-background-color: rgb(61, 61, 248);
+background-color: rgb(151, 151, 194);
 width: 100vw;
 padding: 20px;}
-/* Estilos para la parte izquierda */
+
 .parte-izquierda {
-  flex: 1; /* Hace que ocupe todo el espacio disponible */
-  padding: 20px; /* Añade un relleno para separar el contenido de los bordes */
-  background-color: #f0f0f0; /* Fondo de color claro para destacar el área */
-  border-radius: 8px; /* Bordes redondeados para una apariencia más suave */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar */
+  flex: 1; 
+  padding: 20px; 
+  max-width: 600px;
+  background-color: #f0f0f0;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.parte-izquierda div {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.titulo-izq {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+text-align: center;
+background-color: var(--color-verde);
 }
 
-/* Estilos para el formulario */
+
 .form-select {
   display: flex;
   flex-direction: column;
-  margin-top: 20px; /* Espaciado superior para separar del encabezado */
+ 
+  margin-top: 20px; 
 }
 
-/* Estilos para el botón */
+
 button {
-  margin-top: 10px; /* Espaciado superior para separar del formulario */
+  margin-top: 10px; 
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -102,12 +117,13 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
-  width: 100%;
+  width: 20%;
+  min-width: 200px;
   font-size: 16px;
   color: #333;
   cursor: pointer;
   text-align: center;
-  background-color: rgb(182, 177, 177);
+  background-color: rgb(218, 211, 211);
   font-weight: bold;
 }
 

@@ -15,14 +15,12 @@ export const Home = () => {
           <div className="textouno">
             <h3 className="title-post">
               <strong>
-                Descubre las mejores ofertas <br/> en tu vecindario con con
-                VecinoMarket.
+              Discover the best deals <br/>  in your neighborhood with VecinoMarket."
               </strong>
             </h3>
             <p>
-              VecinoMarket es tu aliado local, brindando acceso fácil a ofertas
-              excepcionales y productos frescos directamente en tu vecindario.
-             
+           
+VecinoMarket is your local ally, providing easy access to exceptional deals and fresh products directly in your neighborhood.
             </p>
           </div>
 
@@ -33,9 +31,10 @@ export const Home = () => {
         </article>
 
         <article className="frescos">
-          <h2 className="hachedos">Productos Frescos</h2>
+          <h2 className="hachedos"> Fresh and high-quality products</h2>
           <img src="productos.jpg" alt="Productos frescos" />
-          <p>Encuentra productos frescos y de calidad en nuestro mercado.</p>
+           <p>In an endeavor to transform the local shopping experience, VecinoMarket stands out as the preferred ally, providing the community with easy access to exceptional deals and fresh products right in their neighborhood. With an unwavering commitment to quality, VecinoMarket has become the top choice for those seeking a convenient and reliable way to stock up on fresh and high-quality products in their day-to-day lives. Explore the local shopping revolution with VecinoMarket today!</p>
+
         </article>
       </section>
     </>

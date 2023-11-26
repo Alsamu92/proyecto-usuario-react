@@ -89,17 +89,17 @@ export const useCheckCodeError = (
     });
   }
 
-  // ------------- userNoFound ---> 404
+ // ------------- userNoFound ---> 404
 
-  // if (res?.response?.status == 404) {
-  //   setUserNotFound(() => true);
-  //   setRes(() => ({}));
-  //   Swal.fire({
-  //     icon: "error",
-  //     title: "Interval server error ❎.",
-  //     text: "No delete user. Try again, please.",
-  //     showConfirmButton: false,
-  //     timer: 1500,
-  //   });
-  // }
+  if (res?.response?.status == 404) {
+    setUserNotFound(() => true);
+    setRes(() => ({}));
+    Swal.fire({
+      icon: "error",
+      title: "Interval server error ❎.",
+      text: "No delete user. Try again, please.",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
 };

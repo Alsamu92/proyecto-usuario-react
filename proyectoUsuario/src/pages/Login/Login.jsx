@@ -40,7 +40,7 @@ export const Login = () => {
       //si el token es false lo manda a verificar, si es true al dashboard
       return <Navigate to="/verifyCode" />;
     } else {
-      return <Navigate to="/dashboard" />;
+      return <Navigate to="/profile" />;
     }
   }
   return (

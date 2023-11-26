@@ -1,8 +1,8 @@
 import Swal from "sweetalert2"
 import React from 'react'
 
-export const useBuscarProvinciaError = (res,setRes) => {
-    if (res?.status == 200) {
+export const useBuscarProvinciaError = (resp,setResp) => {
+    if (resp?.status == 200) {
     
           ;
        
@@ -13,7 +13,7 @@ export const useBuscarProvinciaError = (res,setRes) => {
              timer: 1500,
            });
           ;}
-    if (res?.response?.status == 404) {
+    if (resp?.response?.status == 404) {
     
           ;
        

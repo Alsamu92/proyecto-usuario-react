@@ -12,14 +12,16 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 250px;
     margin: 20px;
+  
     padding: 20px;
     transition: transform 0.3s ease-in-out;
     text-align: left; 
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 1%, rgba(183,210,181,1) 50%, rgba(76,175,80,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 1%, rgb(206, 206, 206) 70%, rgba(76,175,80,1) 100%);
     background-color: rgba(255, 255, 255, 0.7); 
     color: #fff;
     border: 1px solid grey;
+    text-align: center;
   }
   
   .user-card:hover {
@@ -56,7 +58,7 @@
   }
   
   .user-gender {
-    margin: 0;
+    margin: 10px;
     color: black;
     font-size: 1.2rem;
   }
@@ -99,9 +101,7 @@
       
     }
   
-    .user-name {
-      font-size: 1.5rem;
-    }
+ 
   
     .user-gender {
       font-size: 1rem;
@@ -152,4 +152,10 @@
   }
   span{
     cursor: pointer;
+  }
+
+  .borrado-user{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
   }

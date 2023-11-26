@@ -67,6 +67,17 @@ export const deleteUserService = async () => {
     .then((res) => res)
     .catch((error) => error);
 };
+//! ------------------------------------BORRADO DEL USUARIO DIFERENTE----------------------
+
+export const borrarUserDiferente = async (_id) => {
+  return APIUser.delete(`/borrar/${_id}`, {
+    headers: {
+      Authorization: `Bearer ${updateToken()}`,
+    },
+  })
+    .then((res) => res)
+    .catch((error) => error);
+};
 //! ---------------------------- CAMBIO CONTRASEÑA CUANDO ESTAS LOGADO----
 export const changePasswordUserToken = async (formData) => {
   return APIUser.patch("/cambiarlogeado/", formData, {

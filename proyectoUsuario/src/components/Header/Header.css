@@ -2,35 +2,29 @@
   background-color: var(--color-verde);
   color: white;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
-  width: 100vw;
+  justify-content: space-between;
+  
 }
 
 .search-bar {
-  flex-grow: 1;
-  width: 100vw;
+  
   display: flex;
-  justify-content: space-between;
+ justify-content: space-around;
+ width: 100vw;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.308);
-  margin: 0 0px;
+
 }
 
-.search-bar input {
-  width: 20vw;
-  padding: 8px;
- 
-}
-.search-bar img {
- width: 50vw;
+.imagen-vecino {
+  width: 50vw;
   max-width: 110px;
   padding: 8px;
- 
 }
-strong{
+
+strong {
   text-align: center;
 }
 
@@ -46,111 +40,134 @@ strong{
   color: white;
   text-decoration: none;
 }
+
 #iniciarayuda {
   width: 15vw;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   gap: 10px;
-
-  
 }
-#iniciarayuda a  img{
- border-radius: 50%;
- width: 100%;
- height: 100%;
 
-  
+#iniciarayuda a img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .material-symbols-outlined {
- 
   font-size: 24px;
 }
 
-.logate , .contacto, .logout, .profileCircle{
+.logate,
+.contacto,
+.logout,
+.profileCircle {
   display: flex;
   flex-direction: column;
- justify-content: center;
- align-items: center;
- text-align: center;
- cursor: pointer;
- 
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
 }
-.logate a, .contacto a{
+
+.logate a,
+.contacto a {
   color: white;
 }
+
 header a {
   position: relative;
   text-decoration: none;
-  color: #333; 
-  ; 
+  color: #333;
 }
 
 header a::after {
   content: '';
   position: absolute;
   top: 102%;
-  left: 50%; 
+  left: 50%;
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #006400; 
-  transition: width 0.3s ease, left 0.3s ease; 
+  background-color: #006400;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
 header a:hover::after {
   width: 100%;
-  left: 0; 
+  left: 0;
 }
-.especiales{
+
+.especiales {
   display: flex;
   gap: 10px;
 }
-.especiales a{
+
+.especiales a {
   background-color: #006400;
   border-radius: 10px;
-  padding: 0 10px;
 }
-.especiales a:hover{
+
+.especiales a:hover {
   background-color: rgb(207, 223, 63);
   color: black;
- 
 }
 
 .profileCircle {
   max-width: 50px;
 }
-.mensaje-registro,.mensaje-registro p {
+
+.mensaje-registro,
+.mensaje-registro p {
   display: flex;
   flex-direction: column;
   z-index: 5;
-  background-color: #006400;
-  color: white;
- 
+  background-color: #b8d610;
+  color: rgb(0, 0, 0);
 }
-.mensajeyboton{
+
+
+
+.mensajeyboton {
   display: flex;
- justify-content: space-around;
- gap: 20vw;
- background-color: #006400;
-
- 
-
+  justify-content: space-around;
+align-items: center;
+  gap: 20vw;
+  background-color: #b7d609;
+  animation: parpadeo 1s infinite ease-in-out;
+  color: black;
 }
-.mensajeyboton a{
-color: white;
-font-size: 1.2rem;
+
+.mensajeyboton a {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-weight: bold;
 }
-.mensajeyboton button{
-border: none;
-  background-color: red;
-  color: white;
+.cierre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0);
   border-radius: 50%;
-  padding: 1px;
 }
-.mensajeyboton span{
-position: relative;
-top: 5%;
+
+
+.mensajeyboton span {
+  position: relative;
+color: red;
+  width: 20px;
+  height: 20px;
 }
+
+.nombre-vecino {
+  background-color: rgba(255, 0, 0, 0);
+  width: 50vw;
+  min-width: 300px;
+  max-width: 500px;
+  display: inline-block;
+}
+@media (max-width: 650px) {
+  .nombre-vecino {
+    display: none;}}

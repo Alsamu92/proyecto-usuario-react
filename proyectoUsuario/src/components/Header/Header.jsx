@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { useAuth } from "../../context/authContext";
 import logo from "../../assets/logo.png";
+import nombre from "../../assets/nombre.png";
 import { useState } from "react";
 export const Header = () => {
   const [mostrarBarra,setMostrarbarra]=useState(false)
@@ -15,29 +16,29 @@ export const Header = () => {
     <div className="mensaje-registro">
     <div className="mensajeyboton"> 
     <div></div>
-      <NavLink to="/register" onClick={handleMostrarBarra}>Regístrate y Únete  </NavLink>
+      <NavLink to="/register" onClick={handleMostrarBarra}>Register here  </NavLink>
       <button className='cierre'  onClick={handleMostrarBarra}>
               <span className="material-symbols-outlined">cancel</span>
             </button>
       </div>
-    <p>Únete a VecinoMarket y disfruta de ofertas exclusivas.</p>
+    <p>"Join VecinoMarket and enjoy exclusive offers."</p>
     </div>}
    
       <header className="main-header">
         <div className="search-bar">
           <NavLink to="/">
-            <img src={logo}></img>
+            <img src={logo} className="imagen-vecino"></img>
           </NavLink>
-          <input type="text" placeholder="Buscar un producto, una marca..." />
+          <img src={nombre} className="nombre-vecino"></img>
           <div id="iniciarayuda">
             <div className="contacto">
               <span className="material-symbols-outlined">contact_support</span>
-              Contacto
+              Support
             </div>
             {user == null && (
               <NavLink to="/login" className="logate">
                 <span className="material-symbols-outlined">passkey</span>
-                Iniciar sesión
+                Log In
               </NavLink>
             )}
             {user !== null ? (
@@ -61,16 +62,16 @@ export const Header = () => {
           </div>
         </div>
         <div className="nav-links">
-          <NavLink to="/supermercados">Supermercados</NavLink>
+          <NavLink to="/supermercados">Supermarkets</NavLink>
           <a href="/">Black Friday 2023</a>
-          <a href="/">Folletos</a>
+          <a href="/">Special Offers</a>
           {user !== null && (
             <div className="especiales">
               {" "}
               <NavLink to="/dashboard">
               Club VecinoMarket
               </NavLink>
-              <a href="/">Comunidad</a>
+              <a href="/">Community</a>
             </div>
           )}
         </div>
